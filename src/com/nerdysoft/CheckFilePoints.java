@@ -6,7 +6,7 @@ public class CheckFilePoints {
     private static ArrayList<String> stringArrayListPoints;
     private static ArrayList<String> strArrListPointDigit;
 
-    CheckFilePoints(ArrayList<String> arrayList, ArrayList<String> arr ) {
+    CheckFilePoints(ArrayList<String> arrayList, ArrayList<String> arr) {
         stringArrayListPoints = arrayList;
         strArrListPointDigit = arr;
     }
@@ -375,16 +375,13 @@ public class CheckFilePoints {
 
         private boolean addXIntersectingLines(int x1I, int x2I, int y1I, int y2I, int x1, int x2, int y1, int y2) {
             if ((x1I < x1 & x2 < x2I) & (y1 < y1I & y2I < y2)) {
-                System.err.println("+");
                 return true;
-
             }
             return false;
         }
 
         private boolean addYIntersectingLines(int x1I, int x2I, int y1I, int y2I, int x1, int x2, int y1, int y2) {
             if ((y1I < y1 & y2 < y2I) & (x1 < x1I & x2I < x2)) {
-                System.err.println("+");
                 return true;
             }
             return false;
